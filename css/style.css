@@ -40,6 +40,13 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+  font-family: "playfair";
+  src: url("../fonts/playfairdisplay-regular-webfont.woff2") format("woff2"),
+    url("../fonts/playfairdisplay-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
     font-family: "poppins", sans-serif;
     font-style: normal;
@@ -63,38 +70,140 @@ a {
     margin: 0;
   }
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+ padding: 0;
+margin: 0;
+list-style: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1352px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 34px 135px;
-  }
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 135px;
+}
+
 .header__wrap {
   display: flex;
   justify-content: space-between;
+  margin-top: 13px;
+  margin-bottom: 35px;
 }
+
 .header__p { 
     font-family: "pacifico";
     font-size: 33px;
 }
+
 .header__nav {
     display: flex;
 }
+
 .header__item:not(:last-child) {
     margin-right: 40px;    
 }
-.header__item:last-child {
-    font-family: "libre franklin";
+
+.header__button_title {
+  font-family: "libre franklin";
+  text-transform: capitalize;
 }
+
 .header__item { 
     text-transform: uppercase;
 }
+
 .header__link { 
     font-size: 12px;
     letter-spacing: 2px;
+}
+
+.header__button {
+  border: none;
+  background-color: white;
+}
+
+.header__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.headline {
+  width: 100%;
+}
+
+.headline__wrap {
+  position: relative;
+}
+
+.headline__image { 
+  height: 708px;
+  background-image: url(/images/headline__main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.headline__content {
+  position: absolute;
+  top: 192px;
+ }
+
+.headline__info { 
+  max-width: 512px;
+  width: 100%;
+}
+
+.info__brand { 
+  color: #D77474;
+ font-weight: 700;
+ font-size: 14px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ margin-bottom: 12px;
+}
+.info__title { 
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 14px;
+}
+.ampersand {
+  font-family: "playfair";
+  font-size: 68px;
+  color: #AC1313;
+}
+.info__text {
+  display: inline-block;
+  font-family: "libre franklin";
+  font-size: 16px;
+  line-height: 26px;
+  color: #6C6C6C;
+  margin-bottom: 51px;
+}
+
+.info__button { 
+  width: 201px;
+  height: 62px;
+  background-color: #AC1313;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.headline__photo {
+  background-image: url(/images/headline__photo_png.png);
+  width: 784px;
+  height: 445px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 219px;
+  right: 33px;
 }
