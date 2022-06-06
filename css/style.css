@@ -1,44 +1,44 @@
 @font-face {
-    font-family: "poppins";
-    src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"),
-      url("../fonts/poppins-bold-webfont.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "poppins";
+  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-    font-family: "poppins";
-    src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
-      url("../fonts/poppins-regular-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "poppins";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: "libre franklin";
-    src: url("../fonts/librefranklin-regular-webfont.woff2") format("woff2"),
-      url("../fonts/librefranklin-regular-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "libre franklin";
+  src: url("../fonts/librefranklin-regular-webfont.woff2") format("woff2"),
+    url("../fonts/librefranklin-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: "libre franklin";
-    src: url("../fonts/librefranklin-bold-webfont.woff2") format("woff2"),
-      url("../fonts/librefranklin-bold-webfont.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "libre franklin";
+  src: url("../fonts/librefranklin-bold-webfont.woff2") format("woff2"),
+    url("../fonts/librefranklin-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-    font-family: "lato";
-    src: url("../fonts/lato-regular-webfont.woff2") format("woff2"),
-      url("../fonts/lato-regular-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "lato";
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2"),
+    url("../fonts/lato-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: "pacifico";
-    src: url("../fonts/pacifico-webfont.woff2") format("woff2"),
-      url("../fonts/pacifico-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "pacifico";
+  src: url("../fonts/pacifico-webfont.woff2") format("woff2"),
+    url("../fonts/pacifico-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "playfair";
@@ -48,31 +48,32 @@
   font-style: normal;
 }
 * {
-    font-family: "poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 40px;
-    box-sizing: border-box;
-    color: #000;
-    
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  color: #000;
 }
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: inherit;
-  }
-  p, h1, h2 {
-    margin: 0;
-  }
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+p,
+h1,
+h2 {
+  margin: 0;
+}
 ul {
- padding: 0;
-margin: 0;
-list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 button {
@@ -95,17 +96,18 @@ button {
   margin-bottom: 35px;
 }
 
-.header__p { 
-    font-family: "pacifico";
-    font-size: 33px;
+.header__p {
+  font-family: "pacifico";
+  font-size: 33px;
 }
 
 .header__nav {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .header__item:not(:last-child) {
-    margin-right: 40px;    
+  margin-right: 40px;
 }
 
 .header__button_title {
@@ -113,13 +115,13 @@ button {
   text-transform: capitalize;
 }
 
-.header__item { 
-    text-transform: uppercase;
+.header__item {
+  text-transform: uppercase;
 }
 
-.header__link { 
-    font-size: 12px;
-    letter-spacing: 2px;
+.header__link {
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 .header__button {
@@ -134,13 +136,14 @@ button {
 
 .headline {
   width: 100%;
+  margin-bottom: 120px;
 }
 
 .headline__wrap {
   position: relative;
 }
 
-.headline__image { 
+.headline__image {
   height: 708px;
   background-image: url(/images/headline__main.jpg);
   background-repeat: no-repeat;
@@ -151,45 +154,44 @@ button {
 .headline__content {
   position: absolute;
   top: 192px;
- }
+}
 
-.headline__info { 
+.headline__info {
   max-width: 512px;
   width: 100%;
 }
 
-.info__brand { 
-  color: #D77474;
- font-weight: 700;
- font-size: 14px;
- letter-spacing: 2px;
- text-transform: uppercase;
- margin-bottom: 12px;
+.brand {
+  color: #d77474;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* margin-bottom: 12px; */
 }
-.info__title { 
+.info__title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 58px;
   margin-bottom: 14px;
 }
 .ampersand {
   font-family: "playfair";
   font-size: 68px;
-  color: #AC1313;
+  color: #ac1313;
+  vertical-align: text-bottom;
 }
 .info__text {
   display: inline-block;
   font-family: "libre franklin";
   font-size: 16px;
-  line-height: 26px;
-  color: #6C6C6C;
+  color: #6c6c6c;
   margin-bottom: 51px;
 }
 
-.info__button { 
+.info__button {
   width: 201px;
   height: 62px;
-  background-color: #AC1313;
+  background-color: #ac1313;
   color: white;
   text-transform: uppercase;
   font-size: 12px;
@@ -206,4 +208,180 @@ button {
   position: absolute;
   top: 219px;
   right: 33px;
+}
+
+.story__headlines {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 63px;
+}
+
+.h2_headline { 
+  font-size: 40px;
+  font-family: "poppins";
+  font-weight: 700;
+}
+
+.story__picture{ 
+  display: grid;
+  gap: 151px;
+  grid-template-columns: repeat(3, 240px);
+  justify-content: center;
+  margin-bottom: 87px;
+}
+
+.story__item {
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 30px solid;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.story__area { 
+  display: grid;
+  place-content: center;
+}
+
+.story__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.story__name {
+ color: white;
+ font-size: 14px;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ text-align: center;
+ line-height: 38px;
+}
+
+.story__info { 
+  display: grid;
+  grid-template-columns: repeat(2, 501px);
+  gap: 142px;
+  margin-bottom: 372px;
+}
+
+.info__headline { 
+  font-size: 29px;
+  font-weight: 700;
+  max-width: 323px;
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.info_span {
+  font-family: "libre franklin";
+  font-size: 14px;
+  color: #6C6C6C;
+}
+
+.goods__info{
+  display: grid;
+  gap: 86px;
+  row-gap: 244px;
+  margin-bottom: 200px;
+}
+
+.picture__background {
+  width: 500px;
+  height: 220px;
+  background-color: #F5F5F5;
+  position: relative;
+  
+}
+.picture__main {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  overflow: visible;
+}
+
+.vase_black {
+  width: 250px;
+  height: 509px;
+}
+
+.vase_orange {
+  width: 350px;
+  height: 417px;
+}
+
+.picture_1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.content_1 {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 388px;
+}
+
+.picture_2 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.content_2 {
+  grid-area: 2 / 1 / 3 / 2;
+  width: 388px;
+}
+
+.goods__headline { 
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.goods__content {
+  display: inline-block;
+  margin-bottom: 27px;
+}
+
+.goods__ref { 
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.store__headlines {
+ text-align:  center;
+}
+
+.store__brand {
+  margin-bottom: 17px;
+}
+
+.store__headline {
+  margin-bottom: 63px;
+}
+
+.store__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.store__section {
+  border-bottom: 1px solid #6C6C6C;
+}
+
+.store__picture {
+  margin-bottom: 20px;
+}
+
+.store__name { 
+  font-family: "libre franklin";
+  font-size: 16px;
+  color: #6C6C6C;
+}
+
+.store__price {
+  font-size: 14px;
+  margin-bottom: 15px;
 }
