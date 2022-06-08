@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/modificators.css">
   </head>
   <body>
     <header class="header">
     
         <div class="container">
         <div class="header__wrap">
-          <div class="header__logo">
-            <p class="header__p">Pompeo</p>
-          </div>
+          <svg class="header__logo logo">
+            <use xlink:href="images/sprites.svg#logo"></use>
+          </svg>
           <ul class="header__nav">
             <li class="header__item">
               <a href="/" class="header__link red">home</a>
@@ -142,7 +141,7 @@
       </section>
       <section class="store">
         <div class="container">
-          <div class="store__wrap">
+          
           <div class="store__headlines">
           <p class="store__brand brand">Our online store</p>
           <h2 class="store__headline h2_headline">Pottery Collection</h2>
@@ -196,7 +195,7 @@
           <div class="store__view">
             <button class="store__button button">View All Products</button>
           </div>
-        </div>  
+          
         </div>
       </section>
       <section class="catalog">
@@ -218,23 +217,55 @@
       <section class="news">
         <div class="container">
           <div class="news__wrap">
-          <div class="news__image">
           <img src="/images/telegram_svg.svg" alt="" class="news__svg">
-          </div>
           <p class="news__brand brand">Latest news</p>
           <h2 class="news__headline h2_headline">Latest news <span class="ampersand">&</span> New updates</h2>
           <form action="#" class="news__form">
             <div class="form__wrap">
-              <input type="email" class="news__input" placeholder="Email Address">
-              <button class="news__button button">SUBSCRIBE</button>
+              <input type="email" class="news__input form_visual" placeholder="Enter your email">
+              <button class="news__button button form_visual">SUBSCRIBE</button>
             </div>
               <div class="news__checkbox">
                 <input type="checkbox" id="news_click">
-                <label for="click" class="news__text">Sign up for our newsletter</label>
+                <label for="click" class="news__text form_visual">Sign up for our newsletter</label>
               </div>
-            
           </form>
         </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          
+          <div class="contact__info">
+          <svg class="contact__logo logo">
+            <use xlink:href="images/sprites.svg#logo"></use>
+          </svg>
+          <span class="contact__content info_span">I have always striven to fix beauty in wood, stone, glass or pottery, that has been my creed.</span>
+          </div>
+          <ul class="contact__list">
+          <li class="contact__item">
+            <img src="/images/email.svg" class="contact__picture">
+            <span class="contact__name">EMAIL</span>
+            <div class="contact__ref">
+              <a href="mailto:pompeopotery@gmail.com" class="info_span">pompeopotery@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact__item">
+            <img src="/images/address.svg" class="contact__picture">
+            <span class="contact__name">FIND</span>
+            <div class="contact__ref">
+              <address class="info_span">Central Park, Manhattan New York, 1101</address>
+            </div>
+          </li>
+          <li class="contact__item">
+            <img src="/images/tel.svg" class="contact__picture">
+            <span class="contact__name">CALL</span>
+            <div class="contact__ref">
+              <a href="tel:+1 292 345 678" class="info_span">+1 292 345 678</a>
+            </div>
+          </li>
+        </ul>
+     
         </div>
       </section>
     </footer>
