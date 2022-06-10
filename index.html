@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="swiper" href="css/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -168,50 +169,54 @@
           <h2 class="store__headline h2_headline">Pottery Collection</h2>
           </div> 
           <div class="store__info">
-          <ul class="store__list">
-            <li class="store__item">
+
+          <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div class="store__section">
               <img src="/images/decor plate.jpg" class="store__picture">
               <p class="store__name">Decor Plate</p>
               <p class="store__price">$ 65.00 USD</p>
             </div>
-            </li>
-            <li class="store__item" >
+          </div>
+          <div class="swiper-slide">
             <div class="store__section">
             <img src="/images/mint pottery.jpg" class="store__picture">
               <p class="store__name">Mint Pottery</p>
               <p class="store__price">$ 75.00 USD</p>
             </div>  
-            </li>
-            <li class="store__item" >
+          </div>
+          <div class="swiper-slide">
             <div class="store__section"> 
             <img src="/images/set of potterys.jpg" class="store__picture">
               <p class="store__name">Set Of Potterys</p>
               <p class="store__price">$ 125.00 USD</p>
             </div>   
-            </li>
-            <li class="store__item" >
+          </div>
+          <div class="swiper-slide">
             <div class="store__section"> 
             <img src="/images/orange ceramic.jpg" class="store__picture">
               <p class="store__name">Orange Ceramic</p>
               <p class="store__price">$ 55.00 USD</p>
             </div>
-            </li>
-            <li class="store__item" >
+          </div>
+          <div class="swiper-slide">
             <div class="store__section">   
             <img src="/images/dark bowl.jpg" class="store__picture">
               <p class="store__name">Dark Bowl</p>
               <p class="store__price">$ 115.00 USD</p>
             </div> 
-            </li>
-            <li class="store__item">
+          </div>
+          <div class="swiper-slide">
               <div class="store__section">    
               <img src="/images/square pottery.jpg" class="store__picture">
               <p class="store__name">Square Pottery</p>
               <p class="store__price">$ 75.00 USD</p>
             </div> 
-            </li>
-          </ul>
+          </div>
+          </div>
+          </div>
+
         </div>
           <div class="store__view">
             <button class="store__button button">View All Products</button>
@@ -291,5 +296,8 @@
       </section>
     </footer>
 </main>
+
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/swiper.js"></script>
   </body>
 </html>
