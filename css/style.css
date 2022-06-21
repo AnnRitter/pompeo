@@ -595,7 +595,14 @@ input {
    font-size: 13px;
    margin-bottom: 20px;
  }
+ /* ___________________________________________________________________ */
 
+ .swiper-button-next.button__ {
+  color: #F5F5F5;
+
+ }
+
+ /* ____________________________________________________________________ */
  @media screen and (max-width: 1440px){
 
   .container {
