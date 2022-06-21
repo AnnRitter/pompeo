@@ -437,6 +437,7 @@ input {
 
 .store__picture {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .store__name { 
@@ -597,9 +598,19 @@ input {
  }
  /* ___________________________________________________________________ */
 
- .swiper-button-next.button__ {
-  color: #F5F5F5;
+ .swiper-button-next::after, 
+ .swiper-button-prev::after
+  {
+  color: #103a4e;
 
+ }
+
+ .swiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: #103a4e;
+  color: #F5F5F5;
+ 
  }
 
  /* ____________________________________________________________________ */
@@ -635,10 +646,12 @@ input {
 
  }
 
- @media screen and (max-width: 1114px){
+ @media screen and (max-width: 1248px){
   .story__picture {
     gap: 60px;
   }
+
+
  }
 
  @media screen and (max-width: 939px){
@@ -740,9 +753,6 @@ background: #0e2431;
   margin-left: -215px;
 
  }
-}
-
-@media screen and (max-width: 810px){
 
   .container {
     padding: 0 10px;
