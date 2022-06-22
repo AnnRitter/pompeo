@@ -598,6 +598,31 @@ input {
  }
  /* ___________________________________________________________________ */
 
+ .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  margin-bottom: 50px;
+ 
+}
+
+.swiper-autoheight, .swiper-autoheight .swiper-slide {
+  height: 700px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
  .swiper-button-next::after, 
  .swiper-button-prev::after
   {
@@ -605,14 +630,32 @@ input {
 
  }
 
- .swiper .swiper-pagination-bullet {
+ /* .swiper .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   background-color: #103a4e;
   color: #F5F5F5;
  
- }
+ } */
 
+ /* .swiper .swiper-pagination-current, 
+ .swiper .swiper-pagination-fraction, 
+ .swiper .swiper-pagination-total {
+  font-size: 30px;
+ } */
+
+/* .swiper .swiper-pagination-progressbar-fill {
+  background-color: #A21010;
+} */
+
+.swiper .swiper-scrollbar-drag {
+  background-color: #A21010;
+}
+
+
+.swiper .swiper-slide {
+  width: auto;
+}
  /* ____________________________________________________________________ */
  @media screen and (max-width: 1440px){
 
