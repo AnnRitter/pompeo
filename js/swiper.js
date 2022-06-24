@@ -1,11 +1,11 @@
 const swiper = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 100,
-    slidesPerView: 'auto',
+    slidesPerView: 3,
 
     slideToClickedSlide: true,
 
-    autoHeight: true,
+    autoHeight: false,
 
     loop: true,
 
@@ -31,13 +31,11 @@ const swiper = new Swiper('.swiper', {
     },
 
     autoplay: {
-      delay: 1000,
+      delay: 100000,
       disableOnInteraction: false,
     },
 
-    // hashNavigation: {
-    //   wacthState: true,
-    // },
+ 
 
     keyboard: {
       enabled: true, 
@@ -51,31 +49,31 @@ const swiper = new Swiper('.swiper', {
       eventsTarget: '.swiper',
     },
 
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   // clickable: true,
-    //   // dynamicBullets: true,
-    //   // renderBullet: function (index, className) {
-    //   //   return '<span class="' + className + '" > ' + (index + 1) + ' </span>';
-    //   // }
+    pagination: {
+      el: '.swiper-pagination',
+      // clickable: true,
+      // dynamicBullets: true,
+      // renderBullet: function (index, className) {
+      //   return '<span class="' + className + '" > ' + (index + 1) + ' </span>';
+      // }
 
 
-    //   // type: 'fraction',
-    //   // renderFraction: function (currentClass, totalClass) {
-    //   //   return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
-    //   // },
+      // type: 'fraction',
+      // renderFraction: function (currentClass, totalClass) {
+      //   return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
+      // },
 
-    //   // type: 'progressbar';
+      // type: 'progressbar';
 
       
 
-    // },
+    },
 
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    //   draggable: true,
-    //   hide: true,
-    // },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+      hide: true,
+    },
 
     breakpoints: {
       320: {

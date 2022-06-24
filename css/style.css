@@ -217,17 +217,14 @@ input {
 
 .headline {
   margin-bottom: 120px;
-}
-
-.headline__wrap {
-  position: relative;
-}
-
-.headline__image {
   height: 708px;
   background-image: url(/images/headline__main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.headline__wrap {
   position: relative;
 }
 
@@ -458,9 +455,6 @@ input {
 
 .catalog {
   margin-bottom: 122px;
-}
-
-.catalog__image {
   background-image: url(/images/catalog.jpg);
   background-size: cover;
 }
@@ -598,9 +592,15 @@ input {
  }
  /* ___________________________________________________________________ */
 
- .swiper {
+ .sliders {
+  position: relative;
+  padding: 0 100px ;
+ }
+
+ .swiper .change-swiper {
   width: 100%;
   height: 100%;
+  padding: 0 60px;
 }
 
 .swiper-slide {
@@ -611,6 +611,10 @@ input {
  
 }
 
+.swiper-scrollbar {
+  height: 5px;
+}
+
 .swiper-autoheight, .swiper-autoheight .swiper-slide {
   height: 700px;
 }
@@ -618,7 +622,7 @@ input {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 700px;
+  height: 100%;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -630,23 +634,27 @@ input {
 
  }
 
- /* .swiper .swiper-pagination-bullet {
+ .swiper .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   background-color: #103a4e;
   color: #F5F5F5;
  
- } */
+ }
 
- /* .swiper .swiper-pagination-current, 
+ .swiper .swiper-pagination-current, 
  .swiper .swiper-pagination-fraction, 
  .swiper .swiper-pagination-total {
   font-size: 30px;
- } */
+ }
 
-/* .swiper .swiper-pagination-progressbar-fill {
+ .swiper-pagination ._pagination-change {
+  height: 10px;
+ }
+
+.swiper .swiper-pagination-progressbar-fill {
   background-color: #A21010;
-} */
+}
 
 .swiper .swiper-scrollbar-drag {
   background-color: #A21010;
@@ -848,16 +856,13 @@ background: #0e2431;
     text-align: center;
   }
 
-  .headline__image {
-    height: 497px;
-  }
-
   .headline__content {
     top: 104px;
   }
 
   .headline {
     margin-bottom: 72px;
+    height: 497px;
   }
 
   .story__info {
